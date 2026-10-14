@@ -1,0 +1,39 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 打包
+build/
+dist/
+*.egg-info/
+
+# 数据与模型（体积大，绝不上传）
+*.pt
+*.pth
+*.onnx
+*.safetensors
+data/
+datasets/
+*.mp4
+*.bag
+*.mcap
+
+# 环境变量与密钥（含 API Key，绝不上传）
+.env
+*.key
+secrets.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 系统与编辑器
+.DS_Store
+.vscode/
+*.swp
+Thumbs.db
