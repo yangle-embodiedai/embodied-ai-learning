@@ -22,3 +22,8 @@ embodied-ai-learning/
 ## 每日日志
 
 每天的学习记录放在 `logs/` 下，文件名格式 `YYYY-MM-DD.md`。
+
+## 学习进度
+
+- **Day 1（2026-10-13）**：环境搭建 + 项目初始化（Python 3.12.10 / VS Code / Git / SSH 免密推送）
+- **Day 2（2026-10-14）**：变量与 6 种数据类型（`01-python/profile.py`、`01-python/countdown.py`）
