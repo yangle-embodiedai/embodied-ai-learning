@@ -27,3 +27,4 @@ embodied-ai-learning/
 
 - **Day 1（2026-10-13）**：环境搭建 + 项目初始化（Python 3.12.10 / VS Code / Git / SSH 免密推送）
 - **Day 2（2026-10-14）**：变量与 6 种数据类型（`01-python/profile.py`、`01-python/countdown.py`）
+- **Day 3（2026-10-15）**：字符串·切片·方法·f-string·input()（`01-python/qa.py`，`profile.py` 已重构为 f-string）

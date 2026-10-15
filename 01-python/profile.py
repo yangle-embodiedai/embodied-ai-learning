@@ -3,18 +3,19 @@
 # 这是 Day 2 的第 3 步，写完推送 GitHub 后，Day 2 过半。
 
 # ===== 1. 变量区：改这里 =====
-name = "Yangle"            # str：你的真名或常用名
+name = input("你叫什么名字？")      # str：你的真名或常用名
 target_city = "深圳"        # str：目标城市
 target_industry = "具身智能"  # str：目标行业
 deadline = "2027-01-31"    # str：硬指标日期（入职截止）
 hours_per_week = 20        # int：每周可投入小时数
 
 # ===== 2. 输出区：把变量拼成卡片 =====
-# 用 + 和 str() 拼接，不用 f-string（f-string 是周四内容）
+# Day 3 起改用 f-string：字符串前加字母 f，{} 里直接写变量名或表达式
+# 对比 Day 2 的写法 "..." + str(x) + "..."，省掉了所有 str() 和 + 号
 print("====== 跨行信息卡 ======")
-print("姓名：" + name)
-print("目标城市：" + target_city)
-print("目标行业：" + target_industry)
-print("硬指标：" + deadline)
-print("每周投入：" + str(hours_per_week) + " 小时")   # hours_per_week 是 int，拼接前必须 str() 转
-print("一年可投入约 " + str(hours_per_week * 52) + " 小时")   # 数字必须用运算算出，不许手写 1040
+print(f"姓名：{name}")                                  # {name} 直接把变量值填进来，自动转 str
+print(f"目标城市：{target_city}")
+print(f"目标行业：{target_industry}")
+print(f"硬指标：{deadline}")
+print(f"每周投入：{hours_per_week} 小时")                # int 也能直接填，不用 str()
+print(f"一年可投入约 {hours_per_week * 52} 小时")        # {} 里能写运算：先算 20*52 再填
