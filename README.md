@@ -29,3 +29,4 @@ embodied-ai-learning/
 - **Day 2（2026-10-14）**：变量与 6 种数据类型（`01-python/profile.py`、`01-python/countdown.py`）
 - **Day 3（2026-10-15）**：字符串·切片·方法·f-string·input()（`01-python/qa.py`，`profile.py` 已重构为 f-string）
 - **Day 4（2026-10-17）**：条件判断 if/elif/else（`01-python/grade.py`、`01-python/selfcheck.py` 跨行进度自检表）
+- **Day 5（进行中）**：循环 while/break/continue（`01-python/calculator.py` 菜单计算器已提前完成；猜数字、术语表、企业清单待做）
