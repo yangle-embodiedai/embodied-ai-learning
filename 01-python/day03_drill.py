@@ -16,8 +16,8 @@ print(s[-1])    # 能
 # 这是新手最容易错的地方：s[0:4] 取 4 个字符，不是到第 4 个
 word = "embodied"
 print(word[0:4])    # embo（取第0,1,2,3位，即前4个）
-print(word[0:4:2])  # eo （从0开始，每次跳2步：第0、2位）
-print(word[::2])    # eoi  （从开头到结尾，每2个取1个）
+print(word[0:4:2])  # eb （从0开始，每次跳2步：取第0、2位 = e、b）
+print(word[::2])    # ebde （从开头到结尾，步长2：取第0、2、4、6位）
 print(word[::-1])   # deidobme（步长-1，倒序；e m b o d i e d 反过来）
 
 # ===== 2. 字符串常用方法 =====

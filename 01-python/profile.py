@@ -3,7 +3,7 @@
 # 这是 Day 2 的第 3 步，写完推送 GitHub 后，Day 2 过半。
 
 # ===== 1. 变量区：改这里 =====
-name = input("你叫什么名字？")      # str：你的真名或常用名
+name = "Yangle"            # str：你的真名或常用名
 target_city = "深圳"        # str：目标城市
 target_industry = "具身智能"  # str：目标行业
 deadline = "2027-01-31"    # str：硬指标日期（入职截止）
