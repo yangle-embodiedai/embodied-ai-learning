@@ -8,7 +8,8 @@
 from datetime import date
 
 # ===== 2. 变量区：改这里 =====
-deadline = date(2027, 1, 31)   # 硬指标：入职截止日。date(年, 月, 日)，注意月从 1 开始
+deadline = date(2027, 12, 31)   # 硬指标：转职决策底线日（计划 v3 保守时间线，条件触发制）。
+                                # 触发条件见工作区《计划修订_v3_保守时间线.md》
 today = date.today()           # 自动取"今天"，不用手改。date.today() 从操作系统读当前日期
 hours_per_week = 20            # 每周可投入小时数，int 型
 
