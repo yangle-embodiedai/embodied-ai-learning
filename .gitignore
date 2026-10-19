@@ -37,3 +37,6 @@ secrets.*
 .vscode/
 *.swp
 Thumbs.db
+
+# 求职隐私（简历含手机号/真实姓名，仓库是 Public，绝不上传）
+05-resume/
