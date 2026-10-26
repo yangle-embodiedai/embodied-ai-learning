@@ -43,18 +43,16 @@ describe("老杨", "杭州")  # 输出：老杨 在 杭州
 
 # ============ 自写 2 个（你来写，写完跑一遍）============
 def double(num):
-    # 要求：返回 num 的 2 倍（注意是 return，不是 print）
-    pass  # 把 pass 替换成你的代码
+    return num * 2  # 把 pass 替换成你的代码
 
 
 def count_chars(s):
-    # 要求：返回字符串 s 的长度（用 len()）
-    pass
+    return len(s)
 
 
 # 自写函数调用测试（写完上面两个后取消注释跑）
-# print(double(5))        # 期望输出 10
-# print(count_chars("深圳"))  # 期望输出 2
+print(double(5))        # 期望输出 10
+print(count_chars("深圳"))  # 期望输出 2
 
 
 # ============ 收工自检 ============
