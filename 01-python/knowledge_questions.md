@@ -55,6 +55,32 @@
 
 ---
 
+## 板块 D：解释器与终端（PowerShell vs Python REPL vs 跑脚本）
+
+### Q1（10.26）为什么在 PowerShell 里敲 `print(double(5))` 报 `CommandNotFoundException`？
+
+**答**：
+
+- **PowerShell 提示符 `PS D:\...>`**：Windows 自带命令终端，只认系统命令（cmdlet、exe、脚本文件）。它把 `double` 当成"要执行的命令名"去找，找不到就报 `CommandNotFoundException`。
+- **Python 解释器提示符 `>>>`**：只有在这个提示符下，`print`、`double`、`count_chars` 才是 Python 能认的语法。
+- **跨终端调 Python 函数**：两条路：
+  1. **进交互模式 + import**：PowerShell 里敲 `python` 进 `>>>`，再 `from day05_function import double`，然后调
+  2. **直接跑脚本**（推荐）：PowerShell 里敲 `python day05_function.py`，脚本里所有 `print` 语句从上到下执行
+
+**做题口诀**：
+
+- 看到 `PS D:\...>` 提示符 = 在 PowerShell，只能敲系统命令
+- 看到 `>>>` 提示符 = 在 Python 解释器，能调 Python 函数
+- 想调脚本里定义的函数，**要么 import 要么跑脚本**，直接在 PowerShell 里敲函数名 100% 报错
+
+**踩坑点**：
+
+- PowerShell 把 `print`、`double` 等当成命令名找，找不到就 `CommandNotFoundException`
+- 脚本里的 `def` 定义的函数**只在脚本内有效**，外部要 import 才能用
+- 改脚本时把注释掉的 `print` 取消注释（去掉行首 `#`），再 `python 文件名.py` 跑
+
+---
+
 ## 习题对应关系（每周一小测用）
 
 | 板块 | 每周一小测增加题型 | 首考日期 |
@@ -62,6 +88,7 @@
 | A 运算符与括号 | 给一段 dict 代码，判断哪行是取值运算符、哪行是函数调用 | 11.02 |
 | B 字典取值与防崩 | 嵌套字典取值 + `.get()` 默认值类型判断 | 11.02 |
 | C 引号决定类型 | 读代码预测类型 + 改一行让数字运算能跑 | 11.02 |
+| D 解释器与终端 | 给一段 PowerShell 报错截图，判断用户在哪种提示符下、该怎么调函数 | 11.02 |
 
 **11.02 小测（第 7 期）**：按上表三块各出 1 题，共 3 题，全部来自本文件已整理过的知识点。
 
