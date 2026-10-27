@@ -41,7 +41,7 @@ def make_name():
     nickname = "老杨"   # 局部变量
     print(nickname)     # 函数内能看见
 make_name()
-# print(nickname)      # 放开这行会 NameError：nickname 是局部变量，函数外看不见
+#print(nickname)      # 放开这行会 NameError：nickname 是局部变量，函数外看不见
 
 # ===================== 第二部分：默认参数 =====================
 # 示例 5：默认参数的基本用法
@@ -65,20 +65,26 @@ add(5, 3)            # 输出 8（b 传 3）
 # 练习 1：写函数 set_default(x, base=10)，输出 x + base。
 #         调用：set_default(5) → 15；set_default(5, 2) → 7
 def set_default(x, base=10):
-    # TODO 你来补：return x + base
-    pass
+    return x + base
+set_default(5)
+set_default(5,2)
 
 # 练习 2：写函数 counter()，用 global 把模块顶层的 call_count 每次 +1，
 #         并打印 call_count。调用 3 次后应输出 1 / 2 / 3。
 call_count = 0
 def counter():
-    # TODO 你来补：声明 global call_count，然后 call_count = call_count + 1，print(call_count)
-    pass
+    global call_count
+    call_count = call_count + 1
+counter()
+counter()
+counter()
+print(call_count)
+
 
 # ===================== self-test（跑完 2 个练习后，放开下面 3 行）=====================
-# set_default(5)          # 期望 15
-# set_default(5, 2)       # 期望 7
-# counter()               # 期望 1
-# counter()               # 期望 2
-# counter()               # 期望 3
-# print(call_count)       # 期望 3
+set_default(5)          # 期望 15
+set_default(5, 2)       # 期望 7
+counter()               # 期望 1
+counter()               # 期望 2
+counter()               # 期望 3
+print(call_count)       # 期望 3
