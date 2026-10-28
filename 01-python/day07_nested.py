@@ -99,13 +99,20 @@ print(word.upper())       # 输出：HELLO
 #   price <= 50 → "便宜"
 # 提示：用 if / elif / else
 price = 60
-# TODO 你来补 3 行 if/elif/else，print 对应文字
+if price > 100:
+    print("贵")
+elif 50 < price <= 100:
+    print("中等")
+else: 
+    print("便宜")
 
 # 练习 2：两层 for，打印乘法口诀表（1-3），外层 i=1..3，内层 j=1..3
 # 只打印 j <= i 的部分（即 1×1 / 1×2 2×2 / 1×3 2×3 3×3）
 # 输出格式：i*j=i*j 结果（如 2*3=6）
-# TODO 你来补两层 for + 内层 if j<=i + print
-
+for i in range(1,4):
+    for j in range(1,4):
+        if j <= i:
+            print(f"{i}*{j}={i*j}")
 # ===================== self-test =====================
 # 跑完 2 个练习后，下面 3 行直接执行
 price = 60
