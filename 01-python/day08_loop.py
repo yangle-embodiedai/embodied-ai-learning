@@ -99,13 +99,23 @@ print()
 # ===================== 自写练习（你来补 2 段）=====================
 # 练习 1：用 for + range 算 1 到 10 的平方和（1²+2²+...+10² = 385）
 # 要求：用累加器 total_square，循环里把 i*i 加上去，最后 print
-total_square = 0
 # 在这里写你的 for 循环（提示：for i in range(1, 11)）
 # 你的代码：
-
+total_square = 0
+for i in range(1,11):
+    total_square = total_square + i * i 
+    i = i + 1
+print(total_square)
 # 练习 2：用 while 循环，从 10 倒数到 1，每行打印一个数，最后打印"发射！"
 # 要求：countdown = 10 起步，条件是 countdown >= 1，每轮 -1
 countdown = 10
+n = "发射！"
+while countdown >= 1:
+    print(countdown)
+    countdown = countdown - 1
+print(n)
+
+
 # 在这里写你的 while 循环
 # 你的代码：
 
