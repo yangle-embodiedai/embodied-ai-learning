@@ -20,7 +20,10 @@ def count_status(statuses):
     参考：day08_loop.py 示例 5（累加器）+ 示例 7（遍历字典）+ 知识文档板块 B（.get 默认值）
     """
     # 你的代码：
-    pass
+    counts = {}                  # 空字典：用来存"状态 -> 出现次数"
+    for s in statuses:           # s 依次取列表里每个状态字符串（OK/ERR/WARN...）
+        counts[s] = counts.get(s, 0) + 1   # 取当前状态已有次数（没有就默认 0），加 1 后写回
+    return counts                # 返回统计好的字典，供 show_report 使用
 
 # ===================== 步骤 2：报告函数（你来写）=====================
 def show_report(counts):
@@ -28,7 +31,8 @@ def show_report(counts):
     提示：for key, value in counts.items()（参考 day08 示例 7）
     """
     # 你的代码：
-    pass
+    for key, value in counts.items():   # key 是状态名，value 是出现次数
+        print(key, ":", value)          # 打印"状态: 次数"，每行一个
 
 # ===================== 步骤 3：给定数据 + 调用（直接跑）=====================
 # 假想 10 条机器人日志状态
