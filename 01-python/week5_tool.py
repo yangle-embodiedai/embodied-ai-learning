@@ -35,7 +35,7 @@ def show_report(counts):
         print(key, ":", value)          # 打印"状态: 次数"，每行一个
 
 # ===================== 步骤 3：给定数据 + 调用（直接跑）=====================
-# 假想 10 条机器人日志状态
+# 假想 10 条机器人日志状态  
 robot_log = ["OK", "ERR", "OK", "WARN", "OK", "ERR", "OK", "WARN", "OK", "OK"]
 
 result = count_status(robot_log)   # 调用步骤 1，得到统计字典
