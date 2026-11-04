@@ -1,5 +1,6 @@
--- sql_03_group.sql —— SQL Day 3 学习材料（11.04）
+-- day11_sql_group.sql —— 学习日 11：SQL 入门 3（GROUP BY 聚合）
 -- 主题：GROUP BY 分组 + 聚合函数（COUNT/SUM/AVG/MAX/MIN）
+-- ⚠️ 日期待填：等你真正学了这节，再把日期标到实际学习日
 -- 配套：setup_sql.py（建表插数据）+ run_sql.py（执行器）
 -- 用法：python run_sql.py "你的 SQL"
 

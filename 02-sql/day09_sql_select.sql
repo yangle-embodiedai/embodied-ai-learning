@@ -1,5 +1,6 @@
--- sql_01_select.sql —— SQL Day 1 学习材料（11.03 补）
+-- day09_sql_select.sql —— 学习日 09：SQL 入门 1（建库建表 + SELECT）
 -- 主题：建库建表 + SELECT 三种基本用法
+-- ⚠️ 日期待填：等你真正学了这节，再把日期标到实际学习日
 -- 配套：setup_sql.py（建表插数据）+ run_sql.py（执行器）
 -- 用法：python run_sql.py "你的 SQL"
 

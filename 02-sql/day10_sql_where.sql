@@ -1,5 +1,6 @@
--- sql_02_where.sql —— SQL Day 2 学习材料（11.03）
+-- day10_sql_where.sql —— 学习日 10：SQL 入门 2（WHERE 过滤）
 -- 主题：WHERE 过滤 + 比较运算符 + 逻辑运算符（AND/OR/NOT）
+-- ⚠️ 日期待填：等你真正学了这节，再把日期标到实际学习日
 -- 配套：setup_sql.py（建表插数据）+ run_sql.py（执行器）
 -- 用法：python run_sql.py "你的 SQL"
 
